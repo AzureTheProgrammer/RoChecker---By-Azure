@@ -12,9 +12,7 @@ while True:
         print(name, "NOT AVAILABLE")
     else:
         print(name, "AVAILABLE")
-        file = open("names.txt","a")
+        file = open("names.txt","a+")
         file.write(name + " is available " + "\n")
         file.close()
     time.sleep(0.2)
-
-
